@@ -19,12 +19,3 @@ jobs:
           Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -Name 'fDenyTSConnections' -Value 0
           Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
           ./ngrok.exe tcp 3389
-🔄 استبدل YOUR_AUTH_TOKEN برمز ngrok الخاص بك.
-
-تشغيل الـ RDP:
-- ادخل على Actions ← اختر Run workflow
-- بعد انتهاء التشغيل، سيظهر رابط مثل:
-tcp://0.tcp.ngrok.io:12345
-- افتح برنامج RDP على جهازك، واكتب الرابط في خانة السيرفر.
-- اسم المستخدم: kamel123
-- كلمة السر: MyStrong123
