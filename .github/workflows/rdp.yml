@@ -1,4 +1,4 @@
-name: RDP
+name: rdp
 
 on: [workflow_dispatch]
 
@@ -12,7 +12,7 @@ jobs:
           Expand-Archive ngrok.zip
           ./ngrok.exe authtoken 2Dzs6be4YP9fNWSPBVpnlXyzrYb_54EdvzMWFErqLbtr89QkV
 
-      - name: Enable RDP
+      - name: Enable rdp
         run: |
           net user kamel123 MyStrong123 /add
           net localgroup administrators kamel123 /add
